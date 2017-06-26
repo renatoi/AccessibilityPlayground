@@ -23,4 +23,10 @@ public class MyLinearLayout extends LinearLayout {
     public MyLinearLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        Log.wtf("A11Y", "INTERCEPTED");
+        return super.onInterceptTouchEvent(ev);
+    }
 }
