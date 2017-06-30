@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="android.linkedin.com.accessibilityplayground.MainActivity">
+    android:layout_margin="16dp"
+    tools:context="android.linkedin.com.accessibilityplayground.ToggleButtonActivity">
 
     <Button
-        android:id="@+id/go_to_toggle_button_activity"
-        android:layout_width="match_parent"
+        android:id="@+id/my_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Toggle Button"/>
 
-    <Button
-        android:id="@+id/go_to_custom_actions_activity"
+    <TextView
+        android:id="@+id/my_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Custom Actions"/>
+        android:text="Content to be toggled"/>
 
 </LinearLayout>
